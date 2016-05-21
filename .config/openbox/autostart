@@ -1,0 +1,23 @@
+# urxvt daemon
+urxvtd -q -f -o &
+
+compton &
+
+# Papes
+# ~/dotfiles/scripts/wallpaper.sh &
+feh --bg-fill /data/Dropbox/Pics/Wallpapers/uCrGTLP.jpg &
+
+# lemonbar
+sleep .5s &&
+~/.config/lemonbar/clock.sh &
+sleep 1s &&
+~/.config/lemonbar/workspace.sh &
+sleep 1s &&
+~/.config/lemonbar/music.sh &
+
+tint2 &
+
+dropbox &
+
+mpd &
+urxvt -name ncmpcpp -e ncmpcpp &

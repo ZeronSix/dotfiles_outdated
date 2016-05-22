@@ -3,11 +3,11 @@
 dotfile_dir="$HOME/dotfiles"
 flags="-s"
 
-ln $flags "${dotfile_dir}/.config/openbox" "$HOME/.config/openbox"
-ln $flags "${dotfile_dir}/.config/tint2" "$HOME/.config/tint2"
-ln $flags "${dotfile_dir}/.config/neofetch" "$HOME/.config/neofetch"
-ln $flags "${dotfile_dir}/.mpd" "$HOME/.mpd"
-ln $flags "${dotfile_dir}/.ncmpcpp" "$HOME/.ncmpcpp"
+ln $flags "${dotfile_dir}/.config/openbox" "$HOME/.config/"
+ln $flags "${dotfile_dir}/.config/tint2" "$HOME/.config/"
+ln $flags "${dotfile_dir}/.config/neofetch" "$HOME/.config/"
+ln $flags "${dotfile_dir}/.mpd" "$HOME/"
+ln $flags "${dotfile_dir}/.ncmpcpp" "$HOME/"
 
 cp $flags "${dotfile_dir}"/.* "$HOME"
 

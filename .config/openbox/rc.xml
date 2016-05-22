@@ -156,10 +156,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>40</top>
-    <bottom>20</bottom>
-    <left>24</left>
-    <right>24</right>
+    <top>10</top>
+    <bottom>55</bottom>
+    <left>10</left>
+    <right>10</right>
   </margins>
   <dock>
     <position>Top</position>
@@ -449,6 +449,15 @@
           <name>oblogout</name>
         </startupnotify>
         <command>oblogout</command>
+      </action>
+    </keybind>
+    <keybind key="W-b">n
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Toggle tint2</name>
+        </startupnotify>
+        <command>~/dotfiles/scripts/toggle_tray.py</command>
       </action>
     </keybind>
   </keyboard>

@@ -10,12 +10,10 @@ feh --bg-fill /data/Dropbox/Pics/Wallpapers/uCrGTLP.jpg &
 # lemonbar
 sleep .5s &&
 ~/dotfiles/scripts/lemonbar/clock.sh &
-sleep 1s &&
-~/dotfiles/scripts/lemonbar/workspace.sh &
-sleep 1s &&
-~/dotfiles/scripts/lemonbar/music.sh &
-
-tint2 &
+#sleep 1s &&
+#~/dotfiles/scripts/lemonbar/workspace.sh &
+#sleep 1s &&
+#~/dotfiles/scripts/lemonbar/music.sh &
 
 dropbox &
 

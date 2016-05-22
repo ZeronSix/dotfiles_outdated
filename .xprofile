@@ -28,4 +28,4 @@ export cyan="95B9BF"
 export white="f2f3f2"
 
 # lemonbar height
-export barheight=30
+export barheight=33

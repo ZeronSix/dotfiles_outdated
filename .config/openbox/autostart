@@ -1,0 +1,4 @@
+setxkbmap -option ctrl:nocaps       # Make Caps Lock a Control key
+compton &
+dropbox &
+urxvtd -q -f -o &

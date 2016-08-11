@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="urxvt">
+			<action name="Execute">
+				<execute>urxvt</execute>
+			</action>
+		</item>
+		<item label="vim">
+			<action name="Execute">
+				<execute>gvim</execute>
+			</action>
+		</item>
+		<item label="thunar">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item label="transmission">
+			<action name="Execute">
+				<execute>transmission-gtk</execute>
+			</action>
+		</item>
+		<item label="firefox">
+			<action name="Execute">
+				<execute>x-www-browser</execute>
+			</action>
+		</item>
+		<separator/>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<item label="blender">
+			<action name="Execute">
+				<execute>blender</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="client-list-menu"/>
+		<separator/>
+		<item label="lxappearance">
+			<action name="Execute">
+				<execute>lxappearance</execute>
+			</action>
+		</item>
+		<item label="obconf">
+			<action name="Execute">
+				<execute>obconf</execute>
+			</action>
+		</item>
+		<item label="obmenu">
+			<action name="Execute">
+				<execute>obmenu</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="reconfigure">
+			<action name="Reconfigure"/>
+		</item>
+		<item label="restart">
+			<action name="Restart"/>
+		</item>
+		<separator/>
+		<item label="Exit">
+			<action name="Exit"/>
+		</item>
+	</menu>
+</openbox_menu>

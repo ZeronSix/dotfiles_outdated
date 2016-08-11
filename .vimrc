@@ -1,6 +1,6 @@
 set nocompatible              " be iMproved, required
 
-so ~/dotfiles/scripts/plugins.vim
+so ~/dotfiles/plugins.vim
 
 syntax enable
 set number              " activate line numbers
@@ -14,6 +14,7 @@ set wildmenu
 set clipboard=unnamed
 set smartindent
 set showmatch
+set nowrap
 
 "------------Search------------"
 set hlsearch

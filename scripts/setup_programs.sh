@@ -5,7 +5,7 @@ paper-icon-theme deadbeef mpv vim-gtk3 curl fonts-hack-ttf rofi neofetch \
 build-essential cmake python-dev python3-dev steam ttf-mscorefonts-installer \
 dropbox libcairo2-dev libpango1.0-dev libconfig-dev libxcb-randr0-dev \
 libxcb-ewmh-dev libgdk-pixbuf2.0-dev openbox obconf obmenu lxappearance \
-fonts-cantarell libx11-xcb-dev libxcb-xinerama0-dev feh
+fonts-cantarell libx11-xcb-dev libxcb-xinerama0-dev feh dunst
 
 curl -sSf https://static.rust-lang.org/rustup.sh | sh
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 

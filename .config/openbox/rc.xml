@@ -914,7 +914,7 @@
       <desktop>2</desktop>
       <focus>yes</focus>
     </application>
-    <application class="gvim">
+    <application class="Gvim*">
       <desktop>2</desktop>
       <focus>yes</focus>
     </application>

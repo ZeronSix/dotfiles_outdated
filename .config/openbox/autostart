@@ -1,4 +1,6 @@
 setxkbmap -option ctrl:nocaps       # Make Caps Lock a Control key
-compton &
+compton -c &
 dropbox &
 urxvtd -q -f -o &
+~/dotfiles/scripts/run_lemonbar.sh &
+~/dotfiles/scripts/set_wallpaper.sh &

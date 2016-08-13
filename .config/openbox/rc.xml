@@ -297,7 +297,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
+        <width>49%</width>
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
@@ -305,7 +305,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
+        <width>49%</width>
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
@@ -407,6 +407,36 @@
         <command>scrot</command>
       </action>
     </keybind>
+    <keybind key="W-S-T">
+      <action name="Execute">
+        <command>thunar</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-F">
+      <action name="Execute">
+        <command>firefox</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>amixer -D pulse set Master 5%+ unmute</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>amixer -D pulse set Master 5%- unmute</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>amixer -D pulse set Master toggle</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>mpc toggle</command>
+      </action>
+</keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -864,5 +894,38 @@
 
   # end of the example
 -->
+    <application class="Firefox*">
+      <desktop>1</desktop>
+      <focus>no</focus>
+    </application>
+    <application class="mpv*">
+      <desktop>4</desktop>
+      <focus>yes</focus>
+    </application>
+    <application name="ncmpcpp">
+      <desktop>5</desktop>
+      <focus>no</focus>
+    </application>
+    <application class="Atom*">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+    </application>
+    <application class="jetbrains*">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+    </application>
+    <application class="gvim">
+      <desktop>2</desktop>
+      <focus>yes</focus>
+    </application>
+    <application class="Blender">
+      <desktop>3</desktop>
+      <focus>yes</focus>
+      <maximized>true</maximized>
+    </application>
+    <application class="steam">
+      <desktop>3</desktop>
+      <focus>yes</focus>
+    </application>
   </applications>
 </openbox_config>

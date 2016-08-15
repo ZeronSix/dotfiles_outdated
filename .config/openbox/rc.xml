@@ -120,14 +120,15 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>5</number>
+    <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>www</name>
       <name>dev</name>
+      <name>art</name>
       <name>mov</name>
-      <name>gaming</name>
       <name>mus</name>
+      <name>steam</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -154,10 +155,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>50</top>
+    <top>48</top>
     <bottom>10</bottom>
-    <left>10</left>
-    <right>10</right>
+    <left>5</left>
+    <right>5</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -253,6 +254,11 @@
         <to>5</to>
       </action>
     </keybind>
+    <keybind key="W-6">
+      <action name="GoToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
     <keybind key="W-S-1">
       <action name="SendToDesktop">
         <to>1</to>
@@ -284,6 +290,13 @@
     <keybind key="W-S-5">
       <action name="SendToDesktop">
         <to>5</to>
+        <wrap>no</wrap>
+        <follow>no</follow>
+      </action>
+    </keybind>
+    <keybind key="W-S-6">
+      <action name="SendToDesktop">
+        <to>6</to>
         <wrap>no</wrap>
         <follow>no</follow>
       </action>
@@ -434,9 +447,9 @@
     </keybind>
     <keybind key="XF86AudioPlay">
       <action name="Execute">
-        <command>mpc toggle</command>
+        <command>deadbeef --play-pause</command>
       </action>
-</keybind>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -902,7 +915,7 @@
       <desktop>4</desktop>
       <focus>yes</focus>
     </application>
-    <application name="ncmpcpp">
+    <application class="Deadbeef">
       <desktop>5</desktop>
       <focus>no</focus>
     </application>
@@ -923,8 +936,8 @@
       <focus>yes</focus>
       <maximized>true</maximized>
     </application>
-    <application class="steam">
-      <desktop>3</desktop>
+    <application class="Steam">
+      <desktop>6</desktop>
       <focus>yes</focus>
     </application>
   </applications>

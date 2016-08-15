@@ -1,7 +1,7 @@
 #!/bin/bash
 
-geom='1900x35+10+8'
-font_text='Cantarell:size=13'
+geom='1910x35+5+5'
+font_text='Cantarell:size=14'
 font_image='FontAwesome:size=18'
 underline_width=3
 

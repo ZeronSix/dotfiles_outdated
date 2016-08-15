@@ -6,12 +6,12 @@ import subprocess
 import os
 import re
 
-ICONS = ""
+ICONS = ""
 FG_ACTIVE="#FFFFFF"
-FG_INACTIVE="#939381"
+FG_INACTIVE="#555"
 UNDERLINE="#3b4954"
 BG="#C8000000"
-WORKSPACE_BUTTON="   %{{A:wmctrl -s {0}:}}{1}%{{A}}   "
+WORKSPACE_BUTTON="%{{A:wmctrl -s {0}:}}   {1}   %{{A}}"
 
 def get_current_workspace():
     output = subprocess.run(["wmctrl", "-d"], stdout=subprocess.PIPE,
@@ -43,15 +43,27 @@ def time_bar():
 
 
 def volume_bar():
+    print(" ", end="")
     output = subprocess.run(["amixer", "-D", "pulse", "sget", "Master"],
             stdout=subprocess.PIPE, universal_newlines=True).stdout
-    print("%{r} ", end="")
     print(re.findall("\d*%", output)[0] +"%{O10}" , end="")
+
+
+def music_bar():
+    output = subprocess.run(["deadbeef", "--nowplaying-tf", 
+                            "%artist% - %title%"], stdout=subprocess.PIPE, 
+                            stderr=subprocess.PIPE,
+                            universal_newlines=True).stdout
+    if output != " - ":
+        print("%{A4:deadbeef --next:}%{A5:deadbeef --prev:} ", end="")
+        print(output + "%{A}%{A}", end=" ")
 
 while True:
     print("%{{U{}}}%{{B{}}}".format(UNDERLINE, BG), end="")
     workspace_bar(len(ICONS))
     time_bar()
+    print("%{r}", end="")
+    music_bar()
     volume_bar()
     print("")
     sys.stdout.flush()

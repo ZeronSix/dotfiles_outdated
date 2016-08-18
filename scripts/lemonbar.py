@@ -7,9 +7,9 @@ import os
 import re
 
 ICONS = ""
-FG_ACTIVE="#FFF"
-FG_INACTIVE="#F0F0F0"
-UNDERLINE="#3b4954"
+FG_ACTIVE="#628b87"
+FG_INACTIVE="#777777"
+UNDERLINE="#628b87"
 BG="#C8000000"
 WORKSPACE_BUTTON="%{{A:wmctrl -s {0}:}}   {1}   %{{A}}"
 
@@ -29,7 +29,7 @@ def workspace_bar(count):
     for i in range(count):
         if current == i:
             print("%{B#BE09131A}%{+u}", end="")
-            print("%{F" + FG_ACTIVE + "}", end="")
+            print("%{F" + FG_INACTIVE + "}", end="")
         else:
             print("%{F" + FG_INACTIVE + "}", end="")
         print(WORKSPACE_BUTTON.format(i, ICONS[i]), end="")

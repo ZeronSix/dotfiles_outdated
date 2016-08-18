@@ -7,8 +7,8 @@ import os
 import re
 
 ICONS = ""
-FG_ACTIVE="#FFFFFF"
-FG_INACTIVE="#555"
+FG_ACTIVE="#FFF"
+FG_INACTIVE="#F0F0F0"
 UNDERLINE="#3b4954"
 BG="#C8000000"
 WORKSPACE_BUTTON="%{{A:wmctrl -s {0}:}}   {1}   %{{A}}"
@@ -38,12 +38,16 @@ def workspace_bar(count):
 
 def time_bar():
     print("%{F" + FG_ACTIVE + "}", end="")
-    print("%{c}" + subprocess.run(["date"], stdout=subprocess.PIPE,
-           universal_newlines=True).stdout[:15], end="")
+    print(" ", end="")
+    print("%{F" + FG_INACTIVE + "}", end="")
+    print(subprocess.run(["date"], stdout=subprocess.PIPE,
+           universal_newlines=True).stdout[:15], end=" %{O5}")
 
 
 def volume_bar():
+    print("%{F" + FG_ACTIVE + "}", end="")
     print(" ", end="")
+    print("%{F" + FG_INACTIVE + "}", end="")
     output = subprocess.run(["amixer", "-D", "pulse", "sget", "Master"],
             stdout=subprocess.PIPE, universal_newlines=True).stdout
     print(re.findall("\d*%", output)[0] +"%{O10}" , end="")
@@ -55,16 +59,18 @@ def music_bar():
                             stderr=subprocess.PIPE,
                             universal_newlines=True).stdout
     if output != " - ":
+        print("%{F" + FG_ACTIVE + "}", end="")
         print("%{A4:deadbeef --next:}%{A5:deadbeef --prev:} ", end="")
-        print(output + "%{A}%{A}", end=" ")
+        print("%{F" + FG_INACTIVE + "}", end="")
+        print(output + "%{A}%{A}", end=" %{O5}")
 
 while True:
     print("%{{U{}}}%{{B{}}}".format(UNDERLINE, BG), end="")
     workspace_bar(len(ICONS))
-    time_bar()
     print("%{r}", end="")
     music_bar()
     volume_bar()
+    time_bar()
     print("")
     sys.stdout.flush()
     time.sleep(0.05)

@@ -1,15 +1,29 @@
-# Openbox colors, generated using gencol
-window.active.title.bg.color: #7c9fa6
-window.inactive.title.bg.color: #78a090
+# Dylan's Openbox Theme
+#
+# Generated using ob-theme-gen.
+# https://github.com/dylanaraps/bin/blob/master/ob-theme-gen
+
+
+# Colors
+
+# Titlebar colors
+window.active.title.bg.color: #BF9C86
+window.inactive.title.bg.color: #99736e
 window.active.label.text.color: #f0f0f0
 window.inactive.label.text.color: #f0f0f0
-window.*.button.*.image.color: #f0f0f0
+window.active.button.*.image.color: #f0f0f0
+window.inactive.button.*.image.color: #f0f0f0
+
+# Menu colors
 menu*.bg.color: #f0f0f0
 menu*.text.color: #70838c
 menu.border.color: #f0f0f0
 menu.separator.color: #f0f0f0
+
+# Border colors
 window.active.border.color: #f0f0f0
 window.inactive.border.color: #f0f0f0
+
 
 # Borders
 
@@ -19,6 +33,7 @@ window.client.padding.width: 0
 
 # Set border width
 border.width: 0
+
 
 # Title
 
@@ -31,6 +46,7 @@ window.*.title.bg: Solid Flat
 window.*.*.bg: Parentrelative
 
 window.label.text.justify: center
+
 
 # Menu
 

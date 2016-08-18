@@ -155,7 +155,7 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>48</top>
+    <top>40</top>
     <bottom>10</bottom>
     <left>5</left>
     <right>5</right>

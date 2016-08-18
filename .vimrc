@@ -91,6 +91,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 "/ YCM
 let g:ycm_python_binary_path = '/usr/bin/python3'
+let g:ycm_global_ycm_extra_conf = '~/dotfiles/scripts/.ycm_extra_conf.py'
 nmap <leader>j :YcmCompleter GoTo<CR>
 nmap <leader>i :YcmCompleter GoToInclude<CR>
 nmap <leader>k :YcmCompleter GoToDefinition<CR>

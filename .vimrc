@@ -59,6 +59,7 @@ nmap <M-R> :CtrlPBufTag<cr>
 nmap <M-e> :CtrlPMRUFiles<cr>
 nmap <Leader>f :tag<space>
 nmap <M-2> :TagbarToggle<cr>
+nmap <Leader>cd :cd %:p:h<cr>:pwd<CR>
 
 " Search highlight removal
 nmap <Leader><space> :nohlsearch<cr>     

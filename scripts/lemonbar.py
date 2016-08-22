@@ -6,7 +6,7 @@ import subprocess
 import os
 import re
 
-ICONS = ""
+ICONS = ""
 FG_ACTIVE="#628b87"
 FG_INACTIVE="#777777"
 UNDERLINE="#628b87"

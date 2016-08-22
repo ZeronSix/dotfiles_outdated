@@ -120,7 +120,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>6</number>
+    <number>7</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>www</name>
@@ -129,6 +129,7 @@
       <name>mov</name>
       <name>mus</name>
       <name>steam</name>
+      <name>chat</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -259,6 +260,11 @@
         <to>6</to>
       </action>
     </keybind>
+    <keybind key="W-7">
+      <action name="GoToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
     <keybind key="W-S-1">
       <action name="SendToDesktop">
         <to>1</to>
@@ -297,6 +303,13 @@
     <keybind key="W-S-6">
       <action name="SendToDesktop">
         <to>6</to>
+        <wrap>no</wrap>
+        <follow>no</follow>
+      </action>
+    </keybind>
+    <keybind key="W-S-7">
+      <action name="SendToDesktop">
+        <to>7</to>
         <wrap>no</wrap>
         <follow>no</follow>
       </action>
@@ -938,6 +951,14 @@
     </application>
     <application class="Steam">
       <desktop>6</desktop>
+      <focus>yes</focus>
+    </application>
+    <application class="Telegram">
+      <desktop>7</desktop>
+      <focus>no</focus>
+    </application>
+    <application class="Transmission-gtk">
+      <desktop>7</desktop>
       <focus>yes</focus>
     </application>
   </applications>

@@ -5,3 +5,4 @@ dropbox &
 urxvtd -q -f -o &
 ~/dotfiles/scripts/run_lemonbar.sh &
 ~/dotfiles/scripts/set_wallpaper.sh &
+/opt/telegram/Telegram &

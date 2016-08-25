@@ -37,7 +37,7 @@ nmap <C-H> <C-W><C-H>
 if has('gui_running')
     set background=light
     colorscheme solarized 
-    set guifont=Hack\ 10
+    set guifont=Roboto\ Mono\ For\ Powerline\ 11
     set guioptions-=l
     set guioptions-=L
     set guioptions-=r
@@ -100,7 +100,7 @@ nmap <leader>h :YcmCompleter GetDoc<CR>
 
 "/ Rust.vim
 let g:rustfmt_autosave = 1
-let g:ycm_rust_src_path = '~/.rust/src'
+let g:ycm_rust_src_path = '~/git/rust/src'
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"

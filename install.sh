@@ -7,7 +7,9 @@ ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.Xresources ~/.Xresources
 ln -sfn ~/dotfiles/.config/openbox ~/.config/openbox
+ln -sfn ~/dotfiles/.config/i3 ~/.config/i3
 ln -sfn ~/dotfiles/themes/yellow ~/.themes/yellow
+ln -sfn ~/dotfiles/themes/2simple-dark ~/.themes/2simple-dark
 
 xrdb ~/.Xresources
 vim +PluginInstall +qall

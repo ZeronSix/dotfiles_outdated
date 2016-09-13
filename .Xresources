@@ -6,7 +6,7 @@ Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-URxvt.font: xft:Roboto Mono For Powerline:size=11
+URxvt.font: xft:Roboto Mono For Powerline:size=13
 URxvt.scrollBar: false
 URxvt.letterSpace: -1
 

@@ -37,7 +37,7 @@ nmap <C-H> <C-W><C-H>
 if has('gui_running')
     set background=light
     colorscheme solarized 
-    set guifont=Roboto\ Mono\ For\ Powerline\ 13
+    set guifont=Roboto\ Mono\ For\ Powerline\ 11
     set guioptions-=l
     set guioptions-=L
     set guioptions-=r

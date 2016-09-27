@@ -11,7 +11,7 @@ set softtabstop=4
 set shiftwidth=4
 set encoding=utf-8
 set wildmenu
-set clipboard=unnamed
+set clipboard=unnamedplus
 set smartindent
 set showmatch
 set nowrap
